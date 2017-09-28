@@ -2,10 +2,11 @@
  using namespace std; 
   
  int main() { 
+   while (true){
     double med;
     double dia;
     double index;
-    cout << "Mesurement of Medulla\n";
+    cout << "\nMesurement of Medulla\n";
     cin >> med;
     cout << "Full diameter\n";
     cin >> dia; 
@@ -13,7 +14,10 @@
     cout << "Index is: " << index << "\n";
     if (index < 0.33) { 
      cout << "Most likely human"; 
-    }else {
+    }else if (index < 0.5){
       cout << "Most likely animal";
+    }else {
+      cout << "Cannot be determined";
     }
+   }
  }
